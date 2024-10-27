@@ -150,6 +150,6 @@ USER pymqi
 WORKDIR /home/pymqi
 RUN mkdir -p /home/pymqi/pymqienv
 RUN python3 -m venv pymqienv
-RUN . /home/pymqi/pymqienv/bin/activate && pip install pymqi
+RUN . /home/pymqi/pymqienv/bin/activate && pip install pymqi fastapi uvicorn gunicorn typing loguru
 COPY pymqitest.py .
 RUN . /home/pymqi/pymqienv/bin/activate && python3 pymqitest.py
