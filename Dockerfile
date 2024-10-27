@@ -1,5 +1,7 @@
-ARG BASE_IMAGE
-FROM ${BASE_IMAGE}
+#ARG BASE_IMAGE
+#FROM ${BASE_IMAGE}
+
+FROM ubuntu:24.04
 
 LABEL org.opencontainers.image.authors="andre.jernung@gu.se"
 
